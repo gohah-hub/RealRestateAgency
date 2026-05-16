@@ -1,0 +1,267 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>контакты - агентство недвижимости</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'segoe ui', roboto, arial, sans-serif;
+            background-color: #f5f5f0; 
+            color: #333333;
+        }
+
+        .site-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 50px 0;
+            border-bottom: 4px solid #dcdcdc;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 800;
+            font-size: 48px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        .banner {
+            background-color: #e5e4e2;
+            color: #777777;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #d1d1d1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px 0;
+            background-color: #333333;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        main {
+            flex: 1;
+            padding: 60px 10%;
+            background-color: #ffffff;
+            margin: 40px auto;
+            width: 80%;
+            box-shadow: 0 0 40px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-info h3 {
+            text-transform: uppercase;
+            font-size: 16px;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 25px;
+        }
+
+        .info-item b {
+            display: block;
+            color: #000;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .info-item p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        /* стиль формы */
+        .contact-form {
+            flex: 1.5;
+            min-width: 300px;
+            background-color: #f9f9f7;
+            padding: 30px;
+            border: 1px solid #eeeeee;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dcdcdc;
+            background-color: #ffffff;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        .btn-send {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-send:hover {
+            background-color: #333333;
+        }
+
+        .map-placeholder {
+            margin-top: 50px;
+            width: 100%;
+            height: 300px;
+            background-color: #e5e4e2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            border: 1px solid #dcdcdc;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #bcbcbc;
+            padding: 60px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="site-wrapper">
+    <header>
+        <h1>агентство недвижимости</h1>
+    </header>
+
+    <div class="banner">здесь могла быть ваша реклама</div>
+
+    <nav>
+        <a href="index.htm">главная</a>
+        <a href="каталог.htm">каталог</a>
+        <a href="услуги.htm">услуги</a>
+        <a href="онас.htm">о нас</a>
+        <a href="контакты.htm">контакты</a>
+    </nav>
+
+    <main>
+        <h2>свяжитесь с нами</h2>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>наши контакты</h3>
+                
+                <div class="info-item">
+                    <b>адрес офиса:</b>
+                    <p>Москва, ул. деловая, д. 10</p>
+                </div>
+
+                <div class="info-item">
+                    <b>телефон:</b>
+                    <p>8 800 555 35-35</p>
+                </div>
+
+                <div class="info-item">
+                    <b>электронная почта:</b>
+                    <p>vip@realty-expert.ru</p>
+                </div>
+
+                <div class="info-item">
+                    <b>режим работы:</b>
+                    <p>пн-пт: 09:00 — 19:00</p>
+                    <p>сб-вс: по договоренности</p>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>ваше имя</label>
+                    <input type="text" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                    <label>ваш телефон</label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="form-group">
+                    <label>сообщение</label>
+                    <textarea rows="5" placeholder="Чем мы можем вам помочь?"></textarea>
+                </div>
+                <button type="submit" class="btn-send">отправить запрос</button>
+            </form>
+        </div>
+
+        <!-- место для карты -->
+        <div class="map-placeholder">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.9181213053453!2d37.634681199999996!3d55.6208404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab250ce0f642d%3A0x7a27c9a8d17e453b!2z0JTQtdC70L7QstCw0Y8g0YPQuy4sIDEwLCDQnNC-0YHQutCy0LAsIDExNTUxNg!5e0!3m2!1sru!2sru!4v1778752830038!5m2!1sru!2sru" 
+        style="border:0; width:100%; height:100%;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+</div>
+    </main>
+
+    <footer>
+        &copy; 2026. все права защищены. <br>
+        адрес: москва, ул. деловая, д. 10 | email: vip@realty-expert.ru
+    </footer>
+</div>
+
+</body>
+</html>

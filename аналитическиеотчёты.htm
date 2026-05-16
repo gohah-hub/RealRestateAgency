@@ -1,0 +1,224 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>аналитические отчеты - агентство недвижимости</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'segoe ui', roboto, arial, sans-serif;
+            background-color: #f5f5f0; 
+            color: #333333;
+        }
+
+        .site-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 800;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            background-color: #333333;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav a:before { content: "← "; }
+
+        main {
+            flex: 1;
+            padding: 60px 10%;
+            background-color: #ffffff;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 30px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 26px;
+            margin-bottom: 40px;
+            color: #000;
+            text-align: center;
+        }
+
+        .report-card {
+            border: 1px solid #eeeeee;
+            padding: 30px;
+            margin-bottom: 40px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .report-chart-box {
+            flex: 1;
+            min-width: 250px;
+            height: auto;
+            background-color: #f9f9f7;
+            border: 1px dashed #cccccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .report-chart-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .report-chart-box:after {
+            font-size: 11px;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        .report-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .report-info h3 {
+            margin-top: 0;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-box {
+            background-color: #f5f5f0;
+            padding: 10px;
+            border-left: 3px solid #333;
+        }
+
+        .stat-box small { font-size: 10px; text-transform: uppercase; color: #777; }
+        .stat-box div { font-weight: 800; font-size: 18px; }
+
+        .btn-download {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #666;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="site-wrapper">
+    <header>
+        <h1>аналитические отчеты</h1>
+    </header>
+
+    <nav>
+        <a href="index.htm">вернуться на главную</a>
+    </nav>
+
+    <main>
+    <h2>обзор рынка недвижимости</h2>
+
+<!-- отчет 1 -->
+<div class="report-card">
+    <div class="report-chart-box">
+        <img src="https://cdn.finam.ru/images/publications/1967247/1280_001_c565637e1a.jpg" alt="динамика цен">
+    </div>
+    <div class="report-info">
+        <h3>итоги квартала: жилая недвижимость</h3>
+        <p>анализ изменения стоимости квадратного метра в центральных районах. наблюдается стабильный рост спроса на малогабаритные квартиры.</p>
+        <div class="stat-grid">
+            <div class="stat-box">
+                <small>ср. цена м²</small>
+                <div>245 000 ₽</div>
+            </div>
+            <div class="stat-box">
+                <small>динамика</small>
+                <div style="color: green;">+4.2%</div>
+            </div>
+        </div>
+        <a href="итоги_квартала.htm" class="btn-download">просмотреть полный отчет</a>
+    </div>
+</div>
+
+
+    <!-- отчет 2 -->
+    <div class="report-card">
+        <div class="report-chart-box">
+            <img src="https://dpru.obs.ru-moscow-1.hc.sbercloud.ru/images/article/2025/10/02/fb26fce0-c520-4c4d-98a4-f072dd170e53.png" alt="динамика цен"> 
+        </div>
+        <div class="report-info">
+            <h3>инвестиционная привлекательность</h3>
+            <p>прогноз доходности объектов коммерческой недвижимости на ближайшие 12 месяцев. основные тренды и риски.</p>
+            <div class="stat-grid">
+                <div class="stat-box">
+                    <small>окупаемость</small>
+                    <div>8-10 лет</div>
+                </div>
+                <div class="stat-box">
+                    <small>риск</small>
+                    <div>низкий</div>
+                </div>
+            </div>
+            <a href="инвестиционная_привлекательность.htm" class="btn-download">просмотреть аналитику</a>
+        </div>
+    </div>
+</main>
+
+
+    <footer>
+        &copy; 2026. аналитический центр агентства. <br>
+        данные обновляются ежемесячно.
+    </footer>
+</div>
+
+</body>
+</html>
